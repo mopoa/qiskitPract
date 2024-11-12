@@ -12,4 +12,4 @@ from qiskit.primitives import StatevectorSampler
 sampler= StatevectorSampler()
 job = sampler.run([measure],shots=1000)
 result = job.result()
-print(f" {result._pub_results}")
+print(f" {dir(result)}")
